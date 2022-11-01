@@ -18,6 +18,26 @@ a {
     max-width: 800px;
     margin: 40px auto;
 }
+@media screen and (max-width: 576px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    #all {
+        max-width: 70%;
+        margin: auto;
+    }
+    .mail {
+        display: flex;
+        flex-direction: column;
+    }
+    .mail .mail-span {
+        padding: 5px;
+        font-size: 13px;
+        width: 90px;
+        text-align: center;
+    }
+}
 
 header .profil {
     display: flex;
@@ -34,6 +54,12 @@ header .profil img {
 header .profil .nom {
     margin-top: 20px;
     margin-left: 30px;
+}
+@media screen and (max-width: 576px) {
+    header .profil .nom {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
 }
 
 .mail-span {
@@ -77,6 +103,17 @@ section .competences {
     margin-top: 20px;
 
 }
+@media screen and (max-width: 576px) {
+    .competences {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+
+    }
+    .competences .competences-1 {
+        width: auto;
+    }
+}
 
 section .competences-1 {
     border: 1px solid #707070;
@@ -110,6 +147,13 @@ section .description {
     
     
 }
+@media screen and (max-width: 576px) {
+    .langue .langue-1 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
 
 section .langue .langue-1 {
     border: 1px solid #707070;
@@ -132,15 +176,25 @@ section .langue .langue-1 img {
 /* début section-3 */
 section .experiences {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
+}
+@media screen and (max-width: 576px) {
+    .experiences-1 {
+        display:inline-block;
+    }
 }
 
 section .experiences .experiences-1 {
     width: 25%;
     padding-right: 10px;
 }
-
+@media screen and (max-width: 576px) {
+    section .experiences .experiences-1 {
+        width: 50%;
+    }
+}
 section .experiences .experiences-1 .experiencesline {
     display: flex;
     align-items: center;
@@ -171,4 +225,141 @@ section .experiences .experiences-1 .experiencesline {
     margin-top: 15px;
 }
 /* fin début section-3 */
+
+
+
+/* début section-4 */
+
+.control-0 {
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 576px) {
+    select {
+        border-radius: 7px;
+    }
+    .control-0 {
+        display: flex;
+        flex-direction: column;
+    }
+    .control-0 input, .select {
+        width: 100%;
+    }
+}
+.control-1 {
+    width: 49%;
+}
+.control-2{
+    width: 49%;
+}
+.control-3{
+    width: 100%;
+}
+select{
+    width: 49%;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.select{
+    padding: 15px;
+}
+.opt {
+    font-size: 30px;
+}
+.control-radio{
+    margin-right: auto;
+    display: flex;
+}
+.radio-input{
+    margin: 5px;
+}
+.radio-inputs{
+    margin: 5px;
+}
+
+@media screen and (max-width: 576px) {
+    .control-radio{
+        margin-top: 10px;
+        padding: -50px;
+        margin-left: -65px;
+        width: auto;
+
+    }
+    .radio-inputs {
+        margin-left: -50px;
+    }
+    
+    #inpt {
+        justify-content: flex-start;
+        display: flex;
+        margin-left: 80px;
+        margin-top: -19px;
+
+    }
+}
+
+input {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 17px;
+}
+
+.feedback{
+    font-size: 13px;
+    color: red;
+}
+
+.form-groupss{
+    width: 15%;
+    padding: 20px;
+    background-color: #4595F4;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+}
+
+button {
+    text-align: center;
+}
+@media screen and (max-width: 576px) {
+    
+    .form-groupss{
+        width: 25%;
+        padding: 10px;
+        background-color: #4595F4;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        text-align: center;
+    }
+    
+    button {
+        text-align: center;
+    }
+}
+/* fin début section-4 */
+
+
+
+
+/* début footer  */
+.letecode{
+    color:#4595F4;
+    text-decoration: underline;
+}
+@media screen and (max-width: 576px) {
+    
+    footer p {
+        font-size: 10px;
+    }
+}
+/* fin footer */
 
