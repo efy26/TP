@@ -296,6 +296,9 @@ select{
         margin-top: -19px;
 
     }
+    #inpts {
+        margin-left: 60px;
+    }
 }
 
 input {
